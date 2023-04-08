@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col, Layout, Row, Typography, Menu  } from 'antd';
 import { AppstoreOutlined, MailOutlined, UserOutlined } from '@ant-design/icons';
+import Home from './pages/home';
 import 'antd/dist/reset.css';
 import './App.css';
 
@@ -10,7 +11,7 @@ const { Title } = Typography;
 
 function App() {
   const headerStyle = { backgroundColor: '#e6e6e6' };
-  const current = 'mail';
+  const current = 'resume';
   const menuItems = [
                       {
                         label: 'Resume',
@@ -41,7 +42,13 @@ function App() {
             </Col>
           </Row>
         </Header>
-        <Content>Content</Content>
+        <Content style={headerStyle}>
+          <Row justify="center">
+            <Col span="20">
+              <Home />
+            </Col>
+          </Row>
+        </Content>
       </Layout>
     </div>
   );

@@ -36,3 +36,50 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-color: #e6e6e6;
+}
+
+
+.circle-components {
+  border-radius: 50%;
+  border: solid thin black;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  padding-top: 55px;
+  font-size: x-large;
+}
+
+.circle-components :hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+#resume {
+  background-color: #EEA320;
+}
+
+#resume:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+#projects {
+  background-color: #00cc00;
+}
+
+#projects:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+#contact {
+  background-color: #80D8DA;
+}
+
+#contact:hover {
+  background-color: white;
+  cursor: pointer;
+}
